@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+main{
+    padding: 10rem 40rem;
+}
+
+#hero1{
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: orangered;
+    filter: blur(10px);
+    position: absolute;
+}
+#hero2{
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: orangered;
+    filter: blur(10px);
+    position: absolute;
+
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    from{
+        transform: translate(-10%,-10%);
+    }
+    to{
+        transform: translate(10%,10%);
+    }
+}
